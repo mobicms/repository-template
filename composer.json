@@ -1,5 +1,5 @@
 {
-    "name": "mobicms/mobicms",
+    "name": "batumibiz/file-templates",
     "description": "mobiCMS Content Management System",
     "type": "library",
     "license": "GPL-3.0-only",
@@ -11,9 +11,9 @@
     "authors": [
         {
             "name": "Oleg Kasyanov",
-            "role": "Team Lead, Developer",
+            "email": "oleg@batumi.org",
             "homepage": "https://github.com/batumibiz",
-            "email": "oleg@batumi.org"
+            "role": "Team Lead, Developer"
         },
         {
             "name": "mobiCMS Contributors",
@@ -27,7 +27,11 @@
     "config": {
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
-        }
+        },
+        "classmap-authoritative": true,
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "vendor-dir": "system/vendor"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -58,7 +62,6 @@
             "@test"
         ],
         "cs-check": "phpcs",
-        "cs-fix": "phpcbf",
         "static-analysis": "psalm --show-info=true",
         "taint-analysis": "psalm --taint-analysis --show-info=true --report=results.sarif",
         "test": "phpunit --colors=always",
