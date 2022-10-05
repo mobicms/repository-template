@@ -12,13 +12,13 @@
          colors="true">
     <testsuites>
         <testsuite name="default">
-            <directory>system/tests</directory>
+            <directory>tests</directory>
         </testsuite>
     </testsuites>
 
     <coverage processUncoveredFiles="true">
         <include>
-            <directory suffix=".php">system/src</directory>
+            <directory suffix=".php">src</directory>
         </include>
     </coverage>
 

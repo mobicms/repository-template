@@ -12,9 +12,8 @@
     <arg value="p"/>
 
     <!-- Paths to check -->
-    <file>system/config</file>
-    <file>system/src</file>
-    <file>system/tests</file>
+    <file>src</file>
+    <file>tests</file>
 
     <!-- Generic rules -->
     <rule ref="PSR12"/>
