@@ -33,13 +33,13 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "~8.1.0"
+        "php": "~8.2"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
-        "slevomat/coding-standard": "^8.4",
+        "slevomat/coding-standard": "^8.7",
         "squizlabs/php_codesniffer": "^3.7",
-        "vimeo/psalm": "^4.30"
+        "vimeo/psalm": "^5.4"
     },
     "autoload": {
         "psr-4": {
@@ -62,7 +62,6 @@
         "cs-fix": "phpcbf",
         "static-analysis": "psalm --show-info=true",
         "taint-analysis": "psalm --taint-analysis --show-info=true --report=results.sarif",
-        "psalm-fix": "psalm --alter --issues=MissingParamType --dry-run",
         "test": "phpunit --colors=always",
         "test-coverage": [
             "@putenv XDEBUG_MODE=coverage",
